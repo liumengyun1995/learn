@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!--CSS网页布局基础第二章基础布局3-3编程练习-->
+<!--（1） 页面在浏览器上全屏显示-->
+
+<!--（2） 设置最小宽度，当页面宽度缩小到该值时，页面不再发生变化-->
+
+<!--（3） 符合圣杯布局的特征是：左右两边宽度固定，中间响应式-->
+
+<!--（1）头部样式：当鼠标放在右侧导航项时，鼠标变小手状，导航项字体颜色变为橘色-->
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            min-width: 800px;
+        }
+
+        /*头部*/
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .header {
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            line-height: 50px;
+            overflow: hidden;
+        }
+
+        .header .logo {
+            float: left;
+
+        }
+
+        .header .nav {
+            float: right;
+        }
+
+        .header .nav li {
+            line-height: 100px;
+            float: left;
+        }
+
+        .header .nav li a {
+
+            color: #fff;
+            padding: 0 15px;
+        }
+
+        .header .nav li a:hover {
+            cursor: pointer;
+            color: orange;
+        }
+
+        /*    主体*/
+        .content {
+            width: 100%;
+            height: 550px;
+        }
+
+        .main {
+            width: 100%;
+            overflow: hidden;
+
+        }
+
+        .main .m-l {
+            width: 300px;
+            height: 550px;
+            background-color: yellow;
+            float: left;
+        }
+
+        .main .m-l h3 {
+            margin-top: 145px;
+        }
+
+
+        .main .m-m {
+            background-color: pink;
+            width: 60%;
+            height: 550px;
+            float: left;
+            position: relative;
+
+
+        }
+
+        .main .m-m img {
+            width: 300px;
+            height: 240px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0 auto;
+            margin-top: 145px;
+
+        }
+
+        .main .m-r {
+            width: 276px;
+            height: 550px;
+            background-color: skyblue;
+            float: right;
+
+        }
+
+        .main .m-r input {
+            width: 250px;
+            height: 50px;
+            margin-top: 20px;
+            margin-left: 10px;
+
+        }
+
+        .main .m-r .btn {
+            width: 254px;
+            height: 50px;
+            border: none;
+            background-color: red;
+            color: #fff;
+        }
+
+
+        /*    尾部*/
+        .footer {
+            width: 100%;
+            background-color: black;
+        }
+
+        .footer ul {
+            width: 1100px;
+            height: 100px;
+            margin: 0 auto;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .footer ul li {
+            width: 183px;
+            float: left;
+            line-height: 100px;
+            margin: 0 auto;
+            font-size: 18px;
+        }
+
+
+        .footer a {
+            color: #fff;
+        }
+
+
+    </style>
+</head>
+<body>
+<!--头部-->
+<div class="header">
+    <div class="logo"><a><img src="http://climg.mukewang.com/58c0d2d900016ce303000100.png"/></a></div>
+    <div class="nav">
+        <ul>
+            <li><a href="#">课程</a></li>
+            <li><a href="#">职业路径</a></li>
+            <li><a href="#">实战</a></li>
+            <li><a href="#">猿记</a></li>
+            <li><a href="#">手记</a></li>
+        </ul>
+    </div>
+</div>
+<!--主体-->
+<div class="content">
+    <div class="main">
+        <div class="m-m"><img src="http://climg.mukewang.com/590037e00001fab706000400.jpg"/></div>
+        <div class="m-l">
+            <h3>课程推荐</h3>
+            <ul>
+                <li>职业路径 HTML5与CSS实现动态网页</li>
+                <li>职业路径 零基础入门androied语法与界面</li>
+                <li>职业路径 iso基础语法</li>
+                <li>职业路径 PHP入门开发</li>
+                <li>职业路径 JAVA入门开发</li>
+            </ul>
+        </div>
+        <div class="m-r">
+            <h3>登录</h3>
+            <form>
+                <input type="text" placeholder="请输入登录邮箱/手机号"><br>
+                <input type="password" placeholder="6-16位密码，区分大小写，不能用空格"><br>
+                <input type="submit" name="登录" value="登录" class="btn">
+
+            </form>
+        </div>
+    </div>
+
+</div>
+<!--尾部-->
+
+<div class="footer">
+    <ul>
+        <li><a href="#">网站首页</a></li>
+        <li><a href="#">企业合作</a></li>
+        <li><a href="#">人才招聘</a></li>
+        <li><a href="#">联系我们</a></li>
+        <li><a href="#">常见问题</a></li>
+        <li><a href="#">友情链接</a></li>
+    </ul>
+
+</div>
+
+</body>
+</html>

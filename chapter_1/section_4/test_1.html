@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--HTML5网页布局2-1利用新标签实现网页头部的书写-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        header {
+            height: 80px;
+            background-color: black;
+        }
+
+        header .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        header .logo {
+            float: left;
+            /*图片整体高度为80，图片高度为40，（80-40）/2*/
+            height: 80px;
+
+
+        }
+        /*logo居中显示*/
+        header .logo img {
+            margin-top: 20px;
+        }
+
+        header .logo a {
+            color: #fff;
+        }
+
+        header nav {
+
+            float: right;
+
+        }
+
+        /*图片存在黑色间隙，是因为是内联元素，内联块元素本身存在间隙，设置成块级元素即可，为了横向排列，再设置浮动*/
+        header nav a {
+            display: block;
+            float: left;
+
+            color: #fff;
+            height: 73px;
+            line-height: 73px;
+            width: 70px;
+        }
+
+        header nav a:hover {
+            padding-bottom: 10px;
+        }
+
+        header span a {
+            float: left;
+            color: #fff;
+            height: 80px;
+            line-height: 80px;
+
+        }
+
+        header nav .active {
+            padding-bottom: 10px;
+        }
+
+        header nav .home {
+            background-color: red;
+        }
+
+        header nav .course {
+            background-color: yellow;
+        }
+
+        header nav .actual {
+            background-color: green;
+        }
+
+        header nav .plan {
+            background-color: purple;
+        }
+
+        header nav .faq {
+            background-color: orange;
+        }
+
+        header nav .notes {
+            background-color: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="http://climg.mukewang.com/582e5f160001b17100400040.png"/>
+            <a href="#">MYMOOC</a></div>
+        <nav>
+            <ul>
+                <a href="#" class="home active">
+                    <li>Home</li>
+                </a>
+                <a href="#" class="course">
+                    <li>Course</li>
+                </a>
+                <a href="#" class="actual">
+                    <li>Actual</li>
+                </a>
+                <a href="#" class="plan">
+                    <li>Plan</li>
+                </a>
+                <a href="#" class="faq">
+                    <li>FAQ</li>
+                </a>
+                <a href="#" class="notes">
+                    <li>Notes</li>
+                </a>
+
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+</body>
+</html>

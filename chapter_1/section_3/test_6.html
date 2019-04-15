@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body, div, h3, ul, li {
+            margin: 0;
+            padding: 0;
+            /*去掉无序列表中的小圆点*/
+            list-style-type: none;
+
+
+        }
+
+        .big {
+            width: 220px;
+            background: #f2f4f6;
+            border: 1px #ececec solid;
+            /*整体居中显示*/
+            margin: 0 auto;
+        }
+
+        li {
+            font-size: 80%;
+            padding: 10px 5px 5px 5px;
+            line-height: 1.5em;
+            /*以下写的目的是代表不显示*/
+            display: none;
+        }
+
+        h3 {
+            text-align: center;
+            border-bottom: 1px #d9dde1 solid;
+
+
+            line-height: 1.5em;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+
+        }
+        /*注意：hover后面要跟值*/
+        a:hover li {
+            display: block;
+        }
+
+        .elec, .wash, .clothes {
+            border-bottom: 1px #d9dde1 solid;
+
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="big">
+    <div class="div1"><a href="#">
+        <h3>家电</h3>
+        <ul class="elec">
+            <li>冰箱</li>
+            <li>洗衣机</li>
+            <li>空调</li>
+        </ul>
+    </a>
+    </div>
+    <div class="div2">
+        <a href="#"><h3>洗护</h3>
+            <ul class="wash">
+                <li>洗衣液</li>
+                <li>消毒液</li>
+                <li>柔顺剂</li>
+            </ul>
+        </a>
+    </div>
+    <div class="div3">
+        <a href="#"><h3>衣物</h3>
+            <ul class="clothes">
+                <li>衬衫</li>
+                <li>裤子</li>
+                <li>卫衣</li>
+            </ul>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--form表单中input值得应用-->
+<form>
+    <h1 align="center">注册信息</h1>
+    <hr color="#336699"/>
+    <table bgcolor="#f2f2f2" width="600" align="center">
+
+        <tr>
+            <td align="right">用户名：</td>
+            <td align="left"><input type="text" name="username" placeholder="请输入用户名" size="25" maxlength="6"/></td>
+        </tr>
+        <!--value值的应用(初始值点上去不消失）,name值起到展示的作用，value值是传到服务器的值-->
+        <tr>
+            <td align="right">邮箱：</td>
+            <td align="left"><input type="" text name="mail" value="@163.com"/></td>
+        </tr>
+        <tr>
+            <td align="right">密码：</td>
+            <td align="left"><input type="password" name="psw" placeholder="请输入密码" size="25" maxlength="6"/></td>
+        </tr>
+        <tr>
+            <td align="right">确认密码：</td>
+            <td align="left"><input type="password" name="psw" placeholder="请重新输入密码" size="25" maxlength="6"/></td>
+        </tr>
+        <!--文本类型选择文本域-->
+        <tr>
+            <td align="right">上传照片：</td>
+            <td align="left"><input type="file" name="file"/></td>
+        </tr>
+
+        <tr>
+            <td align="right">性别:</td>
+
+            <td align="left">男：<input type="radio" name="sex" value="man"/>
+
+                女：<input type="radio" name="sex" value="woman" checked/></td>
+        </tr>
+        <tr>
+            <td align="right">爱好：</td>
+            <td align="left">足球：<input type="checkbox" name="sport" value="football"/>
+                篮球：<input type="checkbox" name="sport" value="basketball" checked/>
+                排球：<input type="checkbox" name="sport" value="volleyball"/></td>
+        </tr>
+
+        <tr>
+
+            <td align="right">请做自我介绍:</td>
+            <td align="left"><textarea name="JJ" rows="3" cols="20" placeholder="请在此处介绍自己。。。"></textarea></td>
+
+
+        </tr>
+<!--  TODO       -->
+        <tr>
+            <td align="center" colspan="2"><input type="button" name="button" value="快点我吧"/>
+                <input type="submit" name="submit" value="提交"/>
+                <input type="reset" name="reset" value="重置"/></td>
+        </tr>
+    </table>
+
+</form>
+
+</body>
+</html>

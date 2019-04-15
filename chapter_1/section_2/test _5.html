@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--form表单中select值的应用-->
+<form>
+    <tr>
+        <!--        如果想呈现下拉菜单，size和multiple就不用加上，如果想呈列表形式，加上这size,如果要多项选择，加上mulitple-->
+    <tr>
+        <td><select name="animal">
+            <option value="panda">熊猫</option>
+            <option value="cat">猫</option>
+            <option value="dog">狗</option>
+            <option value="pig">猪</option>
+            <option value="monkey">猴子</option>
+        </select></td>
+    </tr>
+    <tr>
+        <td><select name="animal" size="3" multiple>
+            <option value="panda">熊猫</option>
+            <option value="cat">猫</option>
+            <option value="dog">狗</option>
+            <option value="pig">猪</option>
+            <option value="monkey">猴子</option>
+        </select></td>
+    </tr>
+    <!--            todo-->
+    <tr>
+
+       <td> <select name="food">
+            <option>---请选择---</option>
+            <optgroup label="水果">
+
+                <option value="apple">苹果</option>
+                <option value="pear">梨子</option>
+                <option value="banana ">香蕉</option>
+            </optgroup>
+            <optgroup label="蔬菜">
+                <option value="tomato">西红柿</option>
+                <option value="carrot">胡萝卜</option>
+                <option value="egg">鸡蛋</option>
+            </optgroup>
+       </select></td>
+    </tr>
+
+
+    </table>
+</form>
+
+
+</body>
+</html>

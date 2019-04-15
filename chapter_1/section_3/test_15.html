@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+CSS网页布局基础第二章基础布局2-7编程练习
+<!--页面的基本框架（固定头部),页面的各个部分全部自适应(头和脚的宽度分别设置成100%）页脚部分文字垂直水平居中（页脚ul设置宽且居中）页面底部的固定(且设置bottom值）-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            /*width: 1200px;*/
+            width: 100%;
+            background: #ccc;
+            overflow: hidden;
+            position: fixed;
+            margin: 0 auto;
+        }
+
+        .header .logo {
+            width: 200px;
+            height: 80px;
+            float: left;
+
+        }
+
+        .header .logo img {
+            height: 80px;
+        }
+
+        .header .nav {
+            float: right;
+            overflow: hidden;
+        }
+
+        .header .nav li {
+            margin-right: 20px;
+            float: left;
+        }
+
+        .header .nav li a {
+            padding: 0 20px;
+            height: 80px;
+            line-height: 80px;
+            display: block;
+            font-family: '微软雅黑';
+            font-size: 16px;
+            color: #333;
+        }
+
+        .main {
+            width: 1200px;
+            padding-top: 80px;
+            margin: 0 auto;
+            /*图片溢出部分隐藏*/
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .main img {
+            width: 100%;
+            display: block;
+        }
+
+        .footer {
+            margin: 0 auto;
+            /*width: 1200px;*/
+            width: 100%;
+            background: #ccc;
+            overflow: hidden;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .footer ul {
+            width: 1104px;
+            margin: 0 auto;
+        }
+
+
+        .footer li {
+            float: left;
+            margin-right: 30px;
+            margin-left: 30px;
+
+
+        }
+
+        /*页脚部分文字垂直水平居中未达标？？？？？*/
+        .footer li a {
+            padding: 0 30px;
+            height: 80px;
+            line-height: 80px;
+            display: block;
+            font-family: '微软雅黑';
+            font-size: 16px;
+            color: #333;
+            text-align: center;
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <!--    头部-->
+    <div class="header">
+        <div class="logo"><a href="#"><img src="http://climg.mukewang.com/590037f600016ce303000100.png"/></a></div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">免费课程</a></li>
+                <li><a href="#">职业路径</a></li>
+                <li><a href="#">实战</a></li>
+                <li><a href="#">猿记</a></li>
+                <li><a href="#">手记</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--    主体-->
+    <div class="main">
+        <div class="main1"><img src="http://climg.mukewang.com/58c0edb80001c9f216000480.jpg"/></div>
+        <div class="main2"><img src="http://climg.mukewang.com/58c0edc9000100d516000480.jpg"/></div>
+    </div>
+    <!--    尾部-->
+    <div class="footer">
+        <ul>
+            <li><a href="#">网站首页</a></li>
+            <li><a href="#">企业合作</a></li>
+            <li><a href="#">人才招聘</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">常见问题</a></li>
+            <li><a href="#">友情链接</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

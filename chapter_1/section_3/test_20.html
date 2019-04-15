@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--利用dl dt dd实现图文混排-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .bottom {
+            background-color: white;
+        }
+
+        .bottom .content {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .bottom .content .title {
+            text-align: center;
+            font-size: 20px;
+            font-family: "微软雅黑";
+            font-weight: bold;
+            padding-top: 50px;
+            padding-bottom: 10px;
+
+        }
+
+        .bottom .content .pic-content {
+            overflow: hidden;
+        }
+
+        .bottom .content .pic-content dl {
+            float: left;
+        }
+
+        .bottom .content .pic-content dl dt {
+            margin: 10px 12px;
+        }
+
+        .bottom .content .pic-content dl dd {
+            padding-top: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="bottom">
+    <div class="content">
+        <div class="title">ENJOY THE LIFE</div>
+        <div class="pic-content">
+            <dl>
+                <dt><img src="http://climg.mukewang.com/58f829090001a4b504260240.jpg"/></dt>
+                <dd class="word">life is a book</dd>
+            </dl>
+            <dl>
+                <dt><img src="http://climg.mukewang.com/58f8290f0001558804260240.jpg"/></dt>
+                <dd class="word">life is a tea</dd>
+            </dl>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

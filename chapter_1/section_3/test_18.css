@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+}
+
+.header .top {
+    width: 100%;
+    height: 100px;
+    background-color: #07cbc9;
+    overflow: hidden;
+
+}
+
+.header .top .logo {
+    float: left;
+    font-size: 36px;
+    /*color: #fff;*/
+    padding-left: 15px;
+    line-height: 100px;
+
+}
+
+.header .top ul li:hover {
+    float: right;
+    line-height: 100px;
+    background-color: #000;
+
+}
+
+.header .top ul li {
+    float: right;
+    line-height: 100px;
+
+}
+
+.header .top ul li a {
+    padding: 0 15px;
+    color: #fff;
+}
+
+
+/*banner部分*/
+
+.banner {
+    width: 100%;
+
+}
+
+.banner img {
+    height: 600px;
+    width: 100%;
+    padding: 0;
+
+}
+
+
+/*遮罩层*/
+.toplayer {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    left: 0;
+    /*bottom:0;*/
+    top: 100px;
+    background-color: #000;
+    opacity: 0.5;
+
+}
+
+/*form部分*/
+.banner form {
+    height: 100px;
+    text-align: center;
+    padding-top: 60px;
+    opacity: 0.5;
+}
+
+.banner form input {
+    width: 400px;
+    height: 50px;
+    margin-top: 15px;
+    border: none;
+
+
+}
+
+.banner form .input4 {
+    width: 400px;
+    height: 150px;
+    padding-top: 0;
+}
+
+
+.banner form .btn {
+    width: 100px;
+    border: none;
+    height: 50px;
+
+}
+
+.banner form input:hover {
+    color: #07cbc9;
+}
+
+.banner form .btn {
+    border: none;
+    background-color: #07cbc9;
+}
+
+/*ABOUT部分*/
+.about {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+
+.about .title {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.about .p1 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    color: #BDBDBC;
+
+}
+
+.about .middle img {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin-right: -250px;
+    margin-top: -100px;
+}
+
+.about .title1 {
+    font-size: 36px;
+}
+
+.about .middle .main input {
+    border: none;
+    background-color: #000;
+    color: #fff;
+
+}
+
+.about .middle .main input:hover {
+    opacity: 0.1;
+    border: black;
+}
+
+.about .middle {
+    width: 100%;
+    overflow: hidden;
+}
+
+.about .middle .m-l {
+    float: left;
+    margin-left: 30px;
+}
+
+.about .middle .m-m {
+    float: left;
+}
+
+.about .middle .m-r {
+    float: right;
+    height: 300px;
+    margin-right: 300px;
+
+}
+
+.about .bt {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+
+}
+
+.about .bt button {
+    background-color: black;
+    color: #fff;
+}
+
+.about .bt img {
+    width: 25%;
+    float: left;
+    height: 300px;
+
+}
+
+.about .bt .word {
+    background-color: #07cbc9;
+    width: 25%;
+    float: left;
+    height: 300px;
+
+}
+
+.about .bt button:hover {
+    opacity: 0.1;
+    border: black;
+}
+
+/*gallery*/
+.gallery {
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.gallery .title {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.gallery .p1 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    color: #BDBDBC;
+
+
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    padding-right: 20px;
+    pading-right: 20px;
+}
+
+.gallery .wrap {
+    width: 1580px;
+}
+
+.gallery .wrap p {
+    border: 3px black solid;
+    width: 294px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    margin-top: -5px;
+}
+
+.gallery .img1 {
+    float: left;
+    margin-left: 170px;
+
+
+}
+
+.gallery .img2 {
+    float: left;
+}
+
+.gallery .img3 {
+    float: left;
+    margin-right: 170px;
+}
+
+.gallery .img4 {
+    float: left;
+    margin-left: 170px;
+    padding-top: 10px;
+
+}
+
+.gallery .img5 {
+    float: left;
+    padding-top: 10px;
+
+}
+
+.gallery .img6 {
+    float: left;
+    margin-right: 170px;
+    padding-top: 10px;
+}
+
+/*footer*/
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #07cbc9;
+    line-height: 100px;
+    text-align: center;
+    color:white;
+
+
+}

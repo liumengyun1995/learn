@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--给文字设置水平垂直居中-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .box{
+            width: 500px;
+            height: 200px;
+            margin:0 auto;
+            border:1px solid #aaa;
+            background-color: #ababab;
+            color: #fff;
+            font-weight: bolder;
+            position: relative;
+
+        }
+        .box div{
+            width: 200px;
+            height: 40px;
+            font-size: 16px;
+            text-align: center;
+            /*注意：top right值各设置50%是指次边框的右上角居中，要实现整体居中效果，需要往回移自身宽高的一半*/
+            position:absolute;
+            top:50%;
+            right: 50%;
+            margin-right:-100px;
+            margin-top: -20px;
+
+
+            /*此处写代码*/
+
+        }
+
+        </style>
+</head>
+<body>
+<div class="box">
+    <div>
+        欢迎大家来到慕课网学习！
+        来到慕课网学习!
+    </div>
+</div>
+</body>
+</html>
