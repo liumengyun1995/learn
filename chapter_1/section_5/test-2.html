@@ -1,0 +1,121 @@
+<!--css3 背景颜色与渐变2-11-->
+<!--（1） 默认状态图片是不显示的
+
+（2）当鼠标悬停在不同的列表项上时，出现带背景图片的div元素，元素的背景图片大小就是列表项上的标题文字
+
+比如：
+
+当鼠标悬停在”50% 50%”区域时，元素的背景图片是父元素大小的50%-->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>background-size</title>
+
+    <style type="text/css">
+
+        a{text-decoration:none;}
+
+        ul{list-style:none;}
+
+        div{
+
+            background-image:url("http://climg.mukewang.com/582c37e50001b08102000065.jpg");
+
+            width:100px;height:100px;
+
+            display:none;border:2px solid red;
+
+            background-repeat:no-repeat;
+
+        }
+
+        /*补充代码*/
+
+        .length:hover>div{
+
+            display:block;
+
+            background-size:100% 100%;
+
+        }
+
+        .percent:hover>div{
+
+            display:block;
+
+            background-size:50% 50%;
+
+        }
+
+        .cover:hover>div{
+
+            display:block;
+
+            background-size:cover;
+
+        }
+
+        .contain:hover>div{
+
+            display:block;
+
+            background-size:contain;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h2>background-size不同属性值不同效果</h2>
+
+<ul>
+
+    <li  class="length">
+
+        <h3><a href="">100px 100px</a></h3>
+
+        <div></div>
+
+    </li>
+
+    <li  class="percent">
+
+        <h3><a href="">50% 50%</a></h3>
+
+        <div></div>
+
+    </li>
+
+    <li  class="cover">
+
+        <h3><a href="">cover</a></h3>
+
+        <div></div>
+
+    </li>
+
+    <li  class="contain">
+
+        <h3><a href="">contain</a></h3>
+
+        <div></div>
+
+    </li>
+
+</ul>
+
+</body>
+
+</html>
+
+
+
+
