@@ -1,0 +1,45 @@
+<!--css3文本1-7-->
+<!--第一步：给两行字儿设置内容溢出是会被修剪-->
+
+<!--提示：内容溢出时被修剪使用text-overflow属性。-->
+
+<!--第二步：第一个P标签的文本溢出时时用省略号来代表被修剪的文字-->
+
+<!--第三步：第二个P标签的文本溢出被修剪掉-->
+
+<!--第四步：当鼠标悬停在P标签上时，被修剪或者被省略号代替的文字要显现出来-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>text-overflow</title>
+    <style type="text/css">
+        p {
+            width: 500px;
+            font-size: 20px;
+            margin: 10px auto;
+            background: #abcdef;
+            overflow: hidden;
+        }
+
+        .p1 {
+            text-overflow: ellipsis;
+        }
+
+        .p2 {
+            text-overflow: clip;
+        }
+
+        p:hover {
+            overflow: inherit;
+        }
+    </style>
+</head>
+<body>
+<p class="p1">bababadalgharaghtakamminarronnkonnbronntonne,rronntuonnthunn,trovarrhounawnskawntoohoohoordenenthurnuk</p>
+<p class="p2">bababadalgharaghtakamminarronnkonnbronntonne,rronntuonnthunn,trovarrhounawnskawntoohoohoordenenthurnuk</p>
+</body>
+</html>

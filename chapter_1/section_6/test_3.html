@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        section {
+            width: 300px;
+            height: 200px;
+            background: #f00;
+            margin: 50px auto;
+            position:relative;
+        }
+
+        div {
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-top: 6px solid #ff0;
+            border-bottom: none;
+            position: relative;
+        }
+
+        div:before,
+        div:after {
+
+            content: "";
+
+            width: 0;
+
+            height: 0;
+
+            position: absolute;
+
+            top: 0;
+
+            left: 0;
+
+            border: 10px solid transparent;
+
+        }
+
+        div:before {
+            border-left: none;
+            border-right: 6px solid #ff0;
+            transform: translate(-3px, -13px) rotate(-18deg);
+        }
+        div:after{
+            border-right: none;
+            border-left: 6px solid #ff0;
+            transform: translate(-3px, -13px) rotate(18deg);
+        }
+
+
+        .div1 {
+            transform: translate(40px, 45px)scale(3);
+        }
+        .div2 {
+
+            transform: translate(90px, 15px) rotate(22.5deg);
+
+        }
+        .div3{
+
+            transform: translate(110px, 28px) rotate(50deg);
+
+        }
+
+        .div4 {
+
+            transform: translate(110px, 50px);
+
+        }
+
+        .div5 {
+
+            transform: translate(90px, 65px) rotate(40deg);
+
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+    <div class="div5"></div>
+</section>
+</body>
+</html>

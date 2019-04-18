@@ -1,0 +1,33 @@
+<!--css3背景与渐变3-25 编程练习-->
+<!--第一步：使用线性渐变创建背景图像-->
+
+<!--（1）先将单个的背景效果写出来-->
+
+<!--（2） 这个渐变效果是四个角是紫色，中间是透明的，可以使用角度渐变写出-->
+
+<!--第二步： 规定这个背景图像的尺寸是100*100-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        div {
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            background-size: 100px 100px;
+            background-image: linear-gradient(45deg,purple 25%, transparent 25%),
+                              linear-gradient(-45deg,purple 25%, transparent 25%),
+                              linear-gradient(45deg,transparent 75% ,purple 75%),
+                              linear-gradient(-45deg,transparent 75% ,purple 75%);
+
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

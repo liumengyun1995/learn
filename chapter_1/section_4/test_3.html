@@ -9,19 +9,24 @@
             padding: 0;
 
         }
-        img{
+
+        img {
             height: 54px;
             width: 80px;
         }
-        table{
+
+        table {
             border-color: #eee;
             border-collapse: collapse;
-            /*text-align:center;*/
+
         }
+
+        tfoot>tr>td{text-align:center;}
+        tbody>tr>td{text-align:center;}
 
     </style>
 </head>
-<body>
+
 <table width="100%">
     <!--头部-->
     <thead>
@@ -75,6 +80,7 @@
                                 <td height="50px">实付款</td>
                                 <td height="50px">订单操作</td>
                             </tr>
+
                             <tr valign="middle">
                                 <td><img src="./txue.png"/></td>
                                 <td>2019新款个性男女潮牌imooc暮春之行文化衫</td>
@@ -196,14 +202,14 @@
                                 <td>未发货</td>
                             </tr>
                             <tr valign="middle">
-                                <td><img src="./xie.jpg" alt="xie"></td>
-                                <td>2019新款个性男女潮牌imooc慕春之行运动鞋</td>
-                                <td>2</td>
-                                <td>120</td>
-                                <td>可乐</td>
-                                <td>2019-2-21 14:30</td>
-                                <td>240</td>
-                                <td>未发货</td>
+                            <td><img src="./xie.jpg" alt="xie"></td>
+                            <td>2019新款个性男女潮牌imooc慕春之行运动鞋</td>
+                            <td>2</td>
+                            <td>120</td>
+                            <td>可乐</td>
+                            <td>2019-2-21 14:30</td>
+                            <td>240</td>
+                            <td>未发货</td>
                             </tr>
                         </table>
                     </td>
@@ -212,15 +218,14 @@
         </td>
     </tr>
     </tbody>
-<!--    footer-->
-    <tr height="60px" bgcolor="#00bfff" valign="middle">
+    <!--    footer-->
+    <tfoot>
+    <tr height="60px" bgcolor="#00bfff" valign="middle" >
         <td>
             2019-9-21&nbsp;&copy;imooc.com
         </td>
     </tr>
     </tfoot>
 </table>
-
-
 </body>
 </html>
